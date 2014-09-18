@@ -9,5 +9,5 @@
 filename=$(find /tmp -type f -name network-watchdog -mmin +3)
 
 if [ ! -z $filename ]; then
-    /sbin/shutdown -k -r now Network watchdog timeout
+    /sbin/shutdown -r now network-watchdog stopped getting updates
 fi
